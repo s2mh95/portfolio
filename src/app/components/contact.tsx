@@ -7,19 +7,21 @@ import "react-toastify/dist/ReactToastify.css";
 import CircularProgress from '@mui/joy/CircularProgress';
 
 type Data = {
-    name : string,
-    email : string,
-    message : string
+    name: string,
+    email: string,
+    message: string
 }
+
 export default function Contact() {
-  const [formData, setFormData] = useState<Data>({name: "", email: "", message: "",});
+  const [formData, setFormData] = useState<Data>({ name: "", email: "", message: "" });
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e : React.FormEvent<HTMLFormControlsCollection>) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = async (e : React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
     try {
@@ -36,7 +38,9 @@ export default function Contact() {
     <div id="contact" className="flex flex-col lg:flex-row justify-center w-full lg:w-2/3 mx-auto py-20 text-white">
       <ToastContainer position="bottom-left" />
       <div className="flex flex-col justify-end w-full lg:w-1/2 p-10 lg:bg-[url('../../public/bg.png')] bg-no-repeat bg-center">
-        <h1 className="text-4xl lg:text-7xl font-bold">Got a project in<strong className="text-[#00ADB5]"> mind?</strong></h1>
+        <h1 className="text-4xl lg:text-7xl font-bold">
+          Got a project in<strong className="text-[#00ADB5]"> mind?</strong>
+        </h1>
         <div className="hidden lg:flex lg:justify-end">
           <Image src="/pic3.png" alt="" width={300} height={200} />
         </div>
@@ -88,13 +92,13 @@ export default function Contact() {
           disabled={loading}
         >
           {loading ? (
-          <CircularProgress color="neutral" size="sm" value={9}/>
+            <CircularProgress color="neutral" size="sm" value={9} />
           ) : (
             <>
-                Send Message
-                <Image className="mt-2" src="/send.png" alt="" width={30} height={20} />
+              Send Message
+              <Image className="mt-2" src="/send.png" alt="" width={30} height={20} />
             </>
-            )}
+          )}
         </button>
       </form>
     </div>
