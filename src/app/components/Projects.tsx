@@ -59,14 +59,14 @@ export default function Projects() {
             </Link>
             <div className="flex justify-between items-center m-auto">
                 <div className="flex flex-col font-bold text-4xl rounded-3xl m-10 pb-5 h-96 bg-gray-400 opacity-60 hover:opacity-80">
-                    <Image className="m-auto" src="/p.png" alt="mypic" width={300} height={100} />
-                    Project 3
+                    <Image className="m-auto" src="/FAICTP.png" alt="mypic" width={300} height={100} />
+                    Transport Agent Management
                 </div>
             </div>
             <div className="flex justify-between items-center m-auto">
                 <div className="flex flex-col font-bold text-4xl rounded-3xl m-10 pb-5 h-96 bg-gray-400 opacity-60 hover:opacity-80">
-                    <Image className="m-auto" src="/p.png" alt="mypic" width={300} height={100} />
-                    Project 4
+                    <Image className="m-auto" src="/limz.png" alt="mypic" width={300} height={100} />
+                    Blood Labratoary
                 </div>
             </div>
         </Slider>
