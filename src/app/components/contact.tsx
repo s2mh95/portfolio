@@ -46,7 +46,7 @@ export default function Contact() {
         </div>
       </div>
       <form onSubmit={handleSubmit} className="flex flex-col lg:w-1/2 p-10 font-bold relative">
-        <div className="flex flex-row justify-between">
+        <div className="flex lg:flex-row flex-col justify-between">
           <div className="flex flex-col lg:w-1/2 my-3">
             <label htmlFor="name">Your Name</label>
             <input
