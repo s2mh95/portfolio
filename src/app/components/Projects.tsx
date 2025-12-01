@@ -77,7 +77,7 @@ export default function Projects() {
         <div 
             ref={projectsRef}
             id='projects' 
-            className="slider-container items-center text-center py-10 my-20 skills bg-[url('../../public/pic2.png')] mx-10 h-[600px] text-white"
+            className="slider-container items-center text-center py-10 my-20 skills  mx-10 h-[600px] text-white"
         >
             <motion.h1 
                 initial={{ opacity: 0, y: 30 }}

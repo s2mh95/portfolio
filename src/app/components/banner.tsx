@@ -54,7 +54,7 @@ export default function Banner(){
             <div 
                 ref={bannerRef}
                 id="banner" 
-                className="flex flex-col items-center justify-center text-white min-h-[800px] bg-[url('../../public/pic2.png')] mt-20 relative overflow-hidden"
+                className="flex flex-col items-center justify-center text-white min-h-[800px] mt-20 relative overflow-hidden"
             >
                 {/* Centered Content - Image and Name Together */}
                 <motion.div 
