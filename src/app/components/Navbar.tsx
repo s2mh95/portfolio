@@ -33,7 +33,7 @@ export default function Navbar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
-      className="fixed top-0 left-0 right-0 z-50 flex flex-row justify-between font-bold text-2xl text-[#00ADB5]"
+      className=" sticky top-0 left-0 right-0 z-50 flex flex-row justify-between font-bold text-2xl text-[#00ADB5]"
     >
       <div className="lg:w-1/2">
         <AnimatePresence mode="wait">

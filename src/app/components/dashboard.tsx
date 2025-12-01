@@ -150,7 +150,7 @@ export default function Dashboard() {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white p-8 mt-20">
+    <div className="min-h-screen text-white p-8 relative">
       <ToastContainer position="top-right" />
       <motion.div
         initial={{ opacity: 0, y: -20 }}
@@ -159,26 +159,6 @@ export default function Dashboard() {
         className="max-w-6xl mx-auto"
       >
         <div className="flex justify-between items-center mb-8">
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            onClick={() => {
-              try {
-                // Use browser history to go back if available, otherwise fallback to homepage
-                if (typeof window !== 'undefined' && window.history.length > 1) {
-                  router.back();
-                } else {
-                  router.push('/');
-                }
-              } catch (err) {
-                router.push('/');
-              }
-            }}
-            aria-label="Go back"
-            className="bg-transparent text-white px-4 py-2 rounded-full font-bold hover:bg-gray-900 transition-colors mr-4"
-          >
-            Back
-          </motion.button>
           <h1 className="text-4xl font-bold text-[#00ADB5]">Portfolio Dashboard</h1>
           <motion.button
             whileHover={{ scale: 1.05 }}
