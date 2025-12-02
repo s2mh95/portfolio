@@ -52,14 +52,9 @@
   ],
   "projects": [
     {
-      "name": "eCommerce",
-      "url": "https://lucent-panda-03a078.netlify.app/",
-      "image": "/ecommerce.png"
-    },
-    {
-      "name": "Duolingo clone",
-      "url": "https://spectacular-heliotrope-31b851.netlify.app/",
-      "image": "/duolingo.png"
+      "name": "Ransa",
+      "url": "http://ransa-gallery.ir/",
+      "image": "/Ransa.png"
     },
     {
       "name": "Transport Agent Management",
