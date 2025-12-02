@@ -14,12 +14,7 @@ interface Project {
 }
 
 export default function Projects() {
-    const [projects, setProjects] = useState<Project[]>([
-        { name: "eCommerce", url: "https://lucent-panda-03a078.netlify.app/", image: "/ecommerce.png" },
-        { name: "Duolingo clone", url: "https://spectacular-heliotrope-31b851.netlify.app/", image: "/duolingo.png" },
-        { name: "Transport Agent Management", url: "", image: "/FAICTP.png" },
-        { name: "Blood Labratoary", url: "", image: "/limz.png" },
-    ]);
+    const [projects, setProjects] = useState<Project[]>([]);
 
     const projectsRef = useRef<HTMLDivElement>(null);
     const { scrollYProgress } = useScroll({
